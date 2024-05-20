@@ -1,0 +1,115 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Applying Montserrat font */
+body {
+    font-family: 'Montserrat', sans-serif; /* Montserrat font */
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Default text color */
+}
+
+/* Styling the container for the form */
+.container {
+    max-width: 600px; /* Maximum width for the form container */
+    margin: 10px auto; /* Centering the container horizontally */
+    padding: 20px; /* Adding padding inside the container */
+    text-align: center; /* Centering text inside container */
+}
+
+/* Styling the header */
+.header {
+    font-size: 32px; /* Setting font size */
+    margin-bottom: 20px; /* Adding margin at the bottom */
+    color: #26c1f0; /* Dark gray text color */
+}
+
+/* Styling the appointment form */
+.appointment-form {
+    text-align: left; /* Aligning text to the left */
+}
+
+/* Styling form headings */
+.form-heading {
+    font-size: 20px; /* Setting font size */
+    margin-bottom: 20px; /* Adding margin at the bottom */
+    color: #333333; /* Dark gray text color */
+}
+
+/* Styling form groups */
+.form-group {
+    margin-bottom: 20px; /* Adding margin at the bottom */
+}
+
+/* Styling labels */
+label {
+    display: block; /* Displaying labels as block elements */
+    margin-bottom: 5px; /* Adding margin at the bottom */
+    color: #333333; /* Dark gray text color */
+}
+
+/* Styling text input fields, email, date, time, and tel */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="tel"],
+button,
+select {
+    width: 100%; /* Setting width to 100% */
+    padding: 10px; /* Adding padding */
+    border: 1px solid #ccc; /* Adding border */
+    border-radius: 10px; /* Adding border-radius for rounded corners */
+    font-size: 16px; /* Setting font size */
+}
+
+/* Styling the button */
+.btn {
+    background-color: #4c98af; /* Green button background color */
+    color: white; /* White text color */
+    border: none; /* Removing border */
+    cursor: pointer; /* Changing cursor to pointer on hover */
+    margin-top: 20px; /* Adding margin at the top */
+}
+
+/* Changing button background color on hover */
+.btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Styling the payment method dropdown */
+select {
+    appearance: none; /* Remove default appearance for select */
+    margin-bottom: 20px; /* Adding margin at the bottom */
+}
+
+/* Styling the phone number field */
+input[type="tel"] {
+    width: calc(100% - px); /* Setting width to 100% minus the scrollbar width */
+}
+
+/* Ensuring first name, middle initial, and last name are on the same row */
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+}
+
+/* Adjusting width for the first name, middle initial, and last name fields */
+.form-group-row .form-group {
+    flex: 0 0 calc(30% - 10px); /* Adjusting width for first name, middle name, and last name */
+}
+
+/* Adding margin between form groups */
+.form-group {
+    margin-bottom: 0; /* Remove margin bottom */
+    margin-right: 10px; /* Add margin right */
+}
+
+/* Styling the last form group to remove the right margin */
+.form-group:last-child {
+    margin-right: 0; /* Remove right margin for the last form group */
+}

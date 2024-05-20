@@ -1,0 +1,54 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule an Appointment</title>
+    <link rel="stylesheet" href="schedule-appointment.component.css">
+</head>
+
+
+
+<div class="container">
+    <div class="header">Schedule Appointment</div>
+    <form class="appointment-form" (ngSubmit)="onSubmit()" #appointmentForm="ngForm">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="firstName" type="text" [(ngModel)]="appointment.firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="lastName" type="text" [(ngModel)]="appointment.lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="middleName">Middle Name</label>
+        <input id="middleName" name="middleName" type="text" [(ngModel)]="appointment.middleName">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" [(ngModel)]="appointment.email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input id="phone" name="phone" type="tel" [(ngModel)]="appointment.phone" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" [(ngModel)]="appointment.date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input id="time" name="time" type="time" [(ngModel)]="appointment.time" required>
+      </div>
+      <div class="form-group">
+        <label for="paymentMethod">Payment Method</label>
+        <select id="paymentMethod" name="paymentMethod" [(ngModel)]="appointment.paymentMethod" required>
+          <option value="">Select Payment Method</option>
+          <option value="creditCard">Credit Card</option>
+          <option value="paypal">Paypal</option>
+          <option value="gcash">Gcash</option>
+
+          </select>
+      </div>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </div>
+  
